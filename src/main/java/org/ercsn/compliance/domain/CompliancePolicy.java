@@ -4,7 +4,7 @@ public class CompliancePolicy {
     public static RiskAssessment evaluate(ComplianceScreening screening) {
         var status = RiskAssessmentStatus.APPROVED;
 
-        boolean hasCriticalSanction = screening.sanctions().stream().anyMatch(s -> s.confidence > 0.8);
+        boolean hasCriticalSanction = screening.sanctions().stream().anyMatch(s -> s.confidence() > 0.8);
 
         if (hasCriticalSanction) {
             status = RiskAssessmentStatus.REJECTED;
