@@ -10,7 +10,7 @@ import org.springframework.data.map.repository.config.EnableMapRepositories;
 @EnableFeignClients
 public class ComplianceApplication {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         SpringApplication.run(ComplianceApplication.class, args);
     }
 
