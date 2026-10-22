@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient("aml-client")
 public interface AntiMoneyLaunderingClient {
     @GetMapping("/aml/v1/screening/{registrationNumber}")
-    AmlResult getCompanyRisk(@PathVariable String registrationNumber);
+    AmlResult screening(@PathVariable String registrationNumber);
 }

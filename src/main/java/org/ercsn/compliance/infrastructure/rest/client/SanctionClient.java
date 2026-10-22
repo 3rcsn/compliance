@@ -15,7 +15,7 @@ public interface SanctionClient {
     SanctionResult getCompanyRisk(@PathVariable String registrationNumber);
 
     @Component
-    class Fallback {
+    class Fallback implements SanctionClient {
         public SanctionResult getCompanyRisk(String registrationNumber) {
             return new SanctionResult(List.of());
         }
