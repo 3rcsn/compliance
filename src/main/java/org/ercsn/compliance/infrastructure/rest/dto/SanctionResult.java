@@ -1,4 +1,4 @@
-package org.ercsn.compliance.infrastructure.rest.client.dto;
+package org.ercsn.compliance.infrastructure.rest.dto;
 
 import org.ercsn.compliance.domain.ComplianceScreening;
 
